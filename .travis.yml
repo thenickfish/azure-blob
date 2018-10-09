@@ -18,9 +18,8 @@ before_install:
 
 cache:
   directories:
-    - azure-blob/node_modules
+    - node_modules
 
-before_script: cd azure-blob
 script:
   - npm install --quiet
   - ng build --prod --no-progress
