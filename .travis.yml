@@ -25,4 +25,4 @@ script:
   - ng build --prod --no-progress
 
 after_success:
-  - az storage blob upload-batch -d \$web -s ./dist/recipe-app
+  - az storage blob upload-batch -d \$web -s ./dist/azure-blob
